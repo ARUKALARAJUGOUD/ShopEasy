@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - ShopEase</title>
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="account-container">
+    <!-- Sidebar -->
+    <aside class="account-sidebar">
+      <div class="account-avatar">
+        <img id="account-pic" src="https://via.placeholder.com/100" alt="User Avatar">
+        <h3 id="account-username">User Name</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="tab-link active" data-tab="profile"><i class="fa fa-user"></i> Profile</a></li>
+          <li><a href="#" class="tab-link" data-tab="orders"><i class="fa fa-box"></i> Orders</a></li>
+          <li><a href="#" class="tab-link" data-tab="settings"><i class="fa fa-cog"></i> Settings</a></li>
+          <li><a href="#" id="logout-account"><i class="fa fa-sign-out"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="account-content">
+      <!-- Profile Tab -->
+      <section id="tab-profile" class="tab-content active">
+        <h2>My Profile</h2>
+        <p><strong>Email:</strong> <span id="account-email"></span></p>
+        <p><strong>Phone:</strong> <span id="account-phone"></span></p>
+        <p><strong>Address:</strong> <span id="account-address"></span></p>
+        <label class="upload-label">Change Profile Picture
+          <input type="file" id="account-upload" accept="image/*" hidden>
+        </label>
+      </section>
+
+      <!-- Orders Tab -->
+      <section id="tab-orders" class="tab-content">
+        <h2>My Orders</h2>
+        <div id="order-list">
+          <p>No orders yet.</p>
+        </div>
+      </section>
+
+      <!-- Settings Tab -->
+      <section id="tab-settings" class="tab-content">
+        <h2>Account Settings</h2>
+        <form id="account-settings-form">
+          <label>Email</label>
+          <input type="email" id="settings-email">
+          <label>Phone</label>
+          <input type="tel" id="settings-phone">
+          <label>Address</label>
+          <input type="text" id="settings-address">
+          <button type="submit">Save Changes</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- Logout Confirmation Modal -->
+<!-- <div class="modal" id="logout-modal">
+  <div class="modal-content">
+    <h3>Are you sure you want to log out?</h3>
+    <div class="logout-actions">
+      <button id="confirm-logout" class="btn-yes">Yes, Logout</button>
+      <button id="cancel-logout" class="btn-no">Cancel</button>
+    </div>
+  </div>
+</div> -->
+
+
+  <script src="js/account.js"></script>
+</body>
+</html>

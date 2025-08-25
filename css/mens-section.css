@@ -1,0 +1,182 @@
+
+/* ====== Men's Section Styling ====== */
+.mens-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.mens-section .section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mens-section .section-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+  display: inline-block;
+}
+
+.mens-section .section-header h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  border-radius: 2px;
+}
+
+/* ====== Product Grid ====== */
+.product-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ====== Product Card ====== */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;border: 2px solid red;
+
+  
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== Image Styling ====== */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+  /* border: 2px solid red; */
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ====== Text ====== */
+.product-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #333;
+  min-height: 40px;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #007bff;
+  margin: 6px 0;
+}
+
+.product-card .rating {
+  font-size: 14px;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+/* ====== Buttons ====== */
+.product-card button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px 0px;
+}
+
+.add-btn {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: #fff;
+  /* font-size: 22px; */
+}
+
+.add-btn:hover {
+  background: linear-gradient(90deg, #0056b3, #0090cc);
+}
+
+.view-btn {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.view-btn:hover {
+  background: #e0e0e0;
+}
+
+/* ====== RESPONSIVE BREAKPOINTS ====== */
+
+/* Tablets (2 columns) */
+@media (max-width: 992px) {
+  .product-carousel {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Mobiles (1 column) */
+@media (max-width: 600px) {
+  .product-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 380px;
+  }
+
+  .product-card h4 {
+    font-size: 15px;
+  }
+
+  .product-card .price {
+    font-size: 16px;
+  }
+  .product-card h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #333;
+  min-height: 40px;
+}
+
+.add-btn{
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: #fff;
+  font-size: 33px;
+  /* font-size: 22px; */
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

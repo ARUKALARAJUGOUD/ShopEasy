@@ -1,0 +1,138 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  border: none;
+  background-color: #ff9f00;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #fb8c00;
+}
+
+.payment-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.payment-icons img {
+  height: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.payment-icons img:hover {
+  filter: grayscale(0%);
+}
+
+.dropdowns {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.dropdowns select {
+  padding: 8px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Optional App Store Section */
+.footer-app {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-app p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-app img {
+  width: 140px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.footer-app img:hover {
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .dropdowns {
+    flex-direction: column;
+  }
+}

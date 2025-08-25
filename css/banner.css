@@ -1,0 +1,117 @@
+
+/* banner.css */
+:root {
+  --primary: #111;
+  --secondary: #fff;
+  --accent: #ff4d4d;
+  --gradient-bg: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-bg);
+  color: var(--primary);
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.banner-content {
+  max-width: 700px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.promo-badge {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.banner-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+.banner-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.banner-btn {
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.banner-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2.2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+.video-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+

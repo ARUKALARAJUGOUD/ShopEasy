@@ -1,0 +1,59 @@
+
+
+/* brands.css */
+.brand-scroller-section {
+  padding: 3rem 1rem;
+  background: #e3dfdf;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 2px black;
+  border-radius: 2rem;
+  margin: 2rem 0rem;
+}
+
+.brand-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 0rem;
+
+}
+
+.brand-scroller-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-track {
+  display: flex;
+  gap: 3rem;
+  animation: scrollBrands 25s linear infinite;
+  width: max-content;
+  align-items: center;
+}
+
+.brand-track img {
+  height: 60px;
+  filter: grayscale(100%);
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.brand-track img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+@keyframes scrollBrands {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-track img {
+    height: 40px;
+  }
+  .brand-title {
+    font-size: 1.5rem;
+  }
+}

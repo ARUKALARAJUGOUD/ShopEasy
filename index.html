@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ✅ Basic Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase | Best Online Shopping Experience</title>
+<meta name="description" content="ShopEase offers 10,000+ happy customers the best online shopping experience with trust, convenience, quality, and innovation. Discover amazing deals today.">
+<meta name="keywords" content="ecommerce, online shopping, ShopEase, buy online, electronics, fashion, home products, best prices, customer satisfaction">
+<meta name="author" content="ARUKALA RAJU GOUD ">
+
+<!-- ✅ Open Graph (Facebook / LinkedIn) -->
+<meta property="og:title" content="ShopEase | Best Online Shopping Experience">
+<meta property="og:description" content="Join thousands of happy customers! ShopEase delivers trusted, affordable, and innovative online shopping.">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta name="og:image" content="https://yourwebsite.com/images/preview.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShopEase">
+
+<!-- ✅ Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShopEase | Best Online Shopping Experience">
+<meta name="twitter:description" content="Trusted by 10,000+ customers. ShopEase brings quality, affordability & innovation in online shopping.">
+<meta name="twitter:image" content="https://yourwebsite.com/images/preview.jpg">
+
+<!-- ✅ Favicon (Website Icon) -->
+<link rel="icon" type="image/png" href="images/ShopEasy Logo Design.png">
+
+<!-- ✅ Theme Color (for Mobile Browsers) -->
+<meta name="theme-color" content="#00b894">
+
+<!-- ✅ Robots (SEO) -->
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+
+<!-- ✅ Canonical URL (Avoid duplicate content issues) -->
+<link rel="canonical" href="https://yourwebsite.com/">
+
+<!-- ✅ Extra SEO Enhancements -->
+<meta name="rating" content="general">
+<meta name="copyright" content="ShopEase © 2025">
+<meta name="distribution" content="global">
+<meta name="language" content="en">
+
+<!-- ✅ Schema Markup for E-commerce (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "ShopEase",
+  "url": "https://yourwebsite.com",
+  "logo": "images/ShopEasy Logo Design.png",
+  "sameAs": [
+    "https://facebook.com/ShopEase",
+    "https://twitter.com/ShopEase",
+    "https://instagram.com/ShopEase"
+  ],
+  "description": "ShopEase delivers the best online shopping experience with trust, convenience, and innovation. Serving 10,000+ happy customers worldwide.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Shopping Street",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500001",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9876543210",
+    "contactType": "Customer Support",
+    "availableLanguage": ["English", "Hindi", "Telugu"]
+  }
+}
+</script>
+   <!-- linking the style sheets  -->
+
+    <link rel="stylesheet" href="css/mens-section.css">
+      <link rel="stylesheet" href="css/latest-products.css" />
+     <link rel="stylesheet" href="css/search.css">
+     <link rel="stylesheet" href="css/myprofile.css">
+     <link rel="stylesheet" href="css/comment.css">
+     <link rel="stylesheet" href="css/faq.css">
+     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/brand.css">
+      <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+
+  <!-- Preloader -->
+<!-- Preloader -->
+ <div id="preloader">
+  <div class="loader">
+    <img src="images/ShopEasy Logo Design.png" alt="ShopEase Logo" class="logo"> <!-- Your site logo -->
+ <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <span id="progress-text">0%</span>
+  </div>
+</div>
+
+
+
+
+    <!-- header section  -->
+<header>
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="auth-link"><a href="login.html">Login</a></li>
+    </ul>
+    <div class="icons">
+      <div class="cart-icon" onclick="window.location.href='cart.html'">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+      <i class="fas fa-bars" id="menu-icon"></i>
+    </div>
+  </nav>
+
+  <div class="search-box" style="position: relative;">
+    <input type="text" id="search-input" placeholder="Search for products, brands and more...">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 data-aos="fade-out">Welcome to ShopEase</h1>
+      <p>Your one-stop destination for the latest fashion, gadgets, and essentials. Discover top deals and trending collections tailored just for you.</p>
+      <a href="#" class="btn">Start Shopping</a>
+    </div>
+    <div class="hero-image" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob3BwaW5nJTIwb25saW5lfGVufDB8fDB8fHww" alt="Shopping" />
+    </div>
+  </div>
+</section>
+
+<!-- product section  -->
+ <section class="product-section">
+    <h2>Latest Product Collection</h2>
+    <p class="subtitle">Exceptional products for extraordinary people <br> Your trending favorites are here now</p>
+
+    <div class="filters">
+        <select id="categoryFilter" class="filter-select">
+          <option value="all">All Categories</option>
+          <option value="clothing">Clothing</option>
+          <option value="electronics">Electronics</option>
+          <option value="home">Home</option>
+          <option value="accessories">Accessories</option>
+        </select>
+   </div>
+
+
+   <div id="productContainer" class="product-container"></div>
+
+  <!-- pagination  -->
+  <div class="pagination-controls">
+      <button id="prevBtn" class="pagination-btn">
+           <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+        <span id="pageInfo" class="page-info">Page 1</span>
+       <button id="nextBtn" class="pagination-btn">
+       <i class="fa fa-arrow-right" aria-hidden="true"></i>
+       </button>
+  </div>
+  </section>
+
+  <!-- offer section  -->
+
+<section class="offers-section">
+  <h2 class="offers-title">🔥 Today's Best Offers</h2>
+  <p id="discount">"Flash Sale: Shop now or miss out!" <br> "Mega discounts await—act fast!", and "Exclusive deals for you—shop today</p>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </div>
+</section>
+<!-- kids section  -->
+
+  <section class="kids-section">
+    <h2 id="kids-headline">Kids Product Collection</h2>
+    <div class="kids-products-container" id="kids-products"></div>
+  </section>
+
+<!-- mens collection  -->
+<section class="product-section mens-section">
+  <div class="section-header">
+    <h2> Men's Product Collection</h2>
+  </div>
+  <div class="product-carousel" id="mensCarousel">
+    <!-- Products will be injected here -->
+  </div>
+</section>
+
+<!-- womens seection  -->
+
+  <section class="womens-section">
+    <h2 id="Womens-title">Women's Product Collection</h2>
+    <div class="womens-products-container" id="womens-products"></div>
+  </section>
+
+  <!-- banner section  -->
+<!-- banner.html -->
+<section class="video-banner" id="heroBanner">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="https://videos.pexels.com/video-files/5889074/5889074-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="banner-overlay"></div>
+
+  <div class="banner-content">
+    <span class="promo-badge"> Exclusive Drop</span>
+    <h1 class="banner-title">Explore the Fashion Revolution</h1>
+    <p class="banner-subtitle">Style that Speaks for You</p>
+    <a href="#products" class="banner-btn">Shop Now</a>
+  </div>
+</section>
+<!-- band section  -->
+
+<section class="brand-scroller-section">
+  <h2 class="brand-title">Shop by Top Fashion Brands</h2>
+
+  <div class="brand-scroller-wrapper">
+    <div class="brand-track" id="brandTrack">
+      <!-- Duplicated for infinite loop -->
+      <img src="images/nike-removebg-preview.png" alt="Nike">
+      <img src="images/zara-removebg-preview.png" alt="Zara">
+      <img src="images/Adidas_logo-removebg-preview.png" alt="Adidas">
+      <img src="images/puma-logo-puma-icon-free-free-vector-removebg-preview.png" alt="Puma">
+      <img src="images/guchi-removebg-preview.png" alt="Gucci">
+      <img src="images/h_and_m-removebg-preview.png" alt="H&M">
+      <img src="images/levis-removebg-preview.png" alt="Levis">
+      <!-- Duplicates start again -->
+      <img src="images/nike-removebg-preview.png" alt="Nike">
+      <img src="images/zara-removebg-preview.png" alt="Zara">
+      <img src="images/Adidas_logo-removebg-preview.png" alt="Adidas">
+      <img src="images/puma-logo-puma-icon-free-free-vector-removebg-preview.png" alt="Puma">
+      <img src="images/guchi-removebg-preview.png" alt="Gucci">
+      <img src="images/h_and_m-removebg-preview.png" alt="H&M">
+      <img src="images/levis-removebg-preview.png" alt="Levis">
+    </div>
+  </div>
+</section>
+
+<!-- FAQs section  -->
+ <!-- FAQ Section -->
+<section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <!-- <p class="faq-subtitle">Your queries, answered — just like Flipkart and Amazon!</p> -->
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>1. What payment methods do you accept?</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>We accept all major credit/debit cards, UPI, Paytm, Google Pay, PhonePe, and net banking. You can also opt for Cash on Delivery in select locations.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>2. How long will my order take to arrive?</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Orders are typically delivered within 3-5 business days. However, during festivals or sales, deliveries may take up to 7 days.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>3. Can I return or exchange a product?</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, you can return most items within 7 days of delivery if they are unused and in original packaging. Certain products like personal care items are non-returnable for hygiene reasons.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>4. Is my payment secure on ShopEase?</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely! We use 256-bit SSL encryption and trusted payment gateways to ensure your transactions are 100% safe.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>5. Do you offer international shipping?</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Currently, we only ship within India. We’re working on expanding our services to international customers soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Review / Comment Section -->
+<section class="review-section" id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review-form">
+    <input type="text" id="username" placeholder="Your name">
+    <select id="rating">
+      <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+      <option value="4">⭐⭐⭐⭐ - Good</option>
+      <option value="3">⭐⭐⭐ - Average</option>
+      <option value="2">⭐⭐ - Poor</option>
+      <option value="1">⭐ - Terrible</option>
+    </select>
+    <textarea id="reviewText" placeholder="Write your review..."></textarea>
+    <button id="submitReview">Post Review</button>
+  </div>
+
+  <div class="reviews-container" id="reviewsContainer"></div>
+</section>
+
+
+<!-- footer section  -->
+
+<footer class="footer" id="footer" data-aos="fade-up">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+        <li><a href="#">ShopEase</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Help & Support</h4>
+      <ul>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Cancellation</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect With Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <p>Get updates on offers and trends</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="payment-icons">
+        <img src="images/visa-5.svg" alt="Visa">
+        <img src="images/mastercard-6.svg" alt="Mastercard">
+        <img src="images/united-press-international-upi-logo.svg" alt="UPI">
+        <img src="images/paytm-1.svg" alt="Paytm">
+      </div>
+
+      <div class="dropdowns">
+        <select>
+          <option>🌍 India</option>
+          <option>🇺🇸 USA</option>
+          <option>🇬🇧 UK</option>
+        </select>
+        <select>
+          <option>🌐 English</option>
+          <option>हिन्दी</option>
+          <option>தமிழ்</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: App section -->
+  <div class="footer-app">
+    <p>Download Our App</p>
+    <a href="#"><img src="images/google-play-5.svg" alt="Google Play"></a>
+    <a href="#"><img src="images/apple-app-store.svg" alt="App Store"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopEase™. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+<!-- linking the scripts  -->
+ <!-- <script src="latest-products.js"></script> -->
+  <script src="js/cart-utils.js"></script>
+
+<script src="js/womens-product.js"></script>
+<script src="js/mens-product.js"></script>
+<script src="js/kids-product.js"></script>
+<script src="js/products.js"></script>
+
+
+
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="auth-status.js"></script>
+
+  <script src="js/comment.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/brand.js"></script>
+  <script src="js/banner.js"></script>
+
+ <script src="js/offer.js"></script>
+
+ <script src="js/script.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,
+    once: true,
+  });
+</script>
+  <!-- Profile Modal -->
+<div class="modal" id="profile-modal">
+  <div class="modal-content">
+    <span class="close" id="close-profile">&times;</span>
+    <h3>User Profile</h3>
+    <p><strong>Username:</strong> <span id="profile-username"></span></p>
+    <p><strong>Email:</strong> <span id="profile-email"></span></p>
+    <p><strong>Phone:</strong> <span id="profile-phone"></span></p>
+    <p><strong>Address:</strong> <span id="profile-address"></span></p>
+  </div>
+</div>
+
+<!-- Logout Confirmation Modal -->
+<div class="modal" id="logout-modal">
+  <div class="modal-content">
+    <h3>Are you sure you want to log out?</h3>
+    <div class="logout-actions">
+      <button id="confirm-logout" class="btn-yes">Yes, Logout</button>
+      <button id="cancel-logout" class="btn-no">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.getElementById("nav-links");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+
+
+
+
+<script>
+  let progress = 0;
+  const progressBar = document.getElementById("progress-bar");
+  const progressText = document.getElementById("progress-text");
+  const preloader = document.getElementById("preloader");
+
+  // Smooth & slower loading progress
+  let interval = setInterval(() => {
+    if (progress < 100) {
+      progress += 1; // increase 2% each step
+      progressBar.style.width = progress + "%";
+      progressText.textContent = progress + "%";
+    } else {
+      clearInterval(interval);
+      setTimeout(() => {
+        preloader.classList.add("hidden");
+      }, 600); // smooth exit
+    }
+  }, 50); // every 80ms → 2% (total ~4s)
+
+
+  // Ensure it hides when page is fully loaded
+  window.addEventListener("load", () => {
+    progress = 100;
+    progressBar.style.width = "100%";
+    progressText.textContent = "100%";
+    setTimeout(() => {
+      preloader.classList.add("hidden");
+    }, 3000);
+  });
+</script>
+
+
+
+
+</body>
+</html>

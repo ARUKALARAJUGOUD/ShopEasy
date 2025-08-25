@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f4f6f9;
+}
+
+.account-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.account-sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.account-avatar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-avatar img {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+  object-fit: cover;
+}
+
+.account-avatar h3 {
+  margin-top: 10px;
+}
+
+.account-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.account-sidebar ul li {
+  margin: 15px 0;
+}
+
+.account-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.account-sidebar ul li a:hover,
+.account-sidebar ul li a.active {
+  background: #34495e;
+}
+
+/* Main content */
+.account-content {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.upload-label {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 12px;
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#account-settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+#account-settings-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#account-settings-form button {
+  background: #28a745;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#account-settings-form button:hover {
+  background: #218838;
+}

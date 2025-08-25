@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post - ShopEase</title>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/style.css">
+      <!-- for icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+</head>
+<body>
+
+ <header>
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="auth-link"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search for products, brands and more...">
+  </div>
+</header>
+
+<section class="blog-article">
+  <div class="article-container">
+    <h1 id="post-title">Blog Title Here</h1>
+    <div class="article-meta" id="post-meta">By Author | Date</div>
+    <img id="post-image" src="" alt="Blog Image" class="article-image">
+    <div id="post-content" class="article-content">
+      <!-- Blog content will load here -->
+    </div>
+  </div>
+</section>
+<!-- comment section  -->
+<section class="comments">
+  <h2>Leave a Comment</h2>
+  <form id="comment-form">
+    <input type="text" id="comment-name" placeholder="Your Name" required>
+    <textarea id="comment-text" placeholder="Write your comment..." required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+
+  <div id="comment-list">
+    <!-- Comments will appear here -->
+  </div>
+</section>
+
+
+
+<section class="related-posts">
+  <h2>Related Posts</h2>
+  <div class="related-container" id="related-container">
+    <!-- Related posts injected via JS -->
+  </div>
+</section>
+
+<footer>
+
+
+    <div class="footer-container">
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+        <li><a href="#">ShopEase</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Help & Support</h4>
+      <ul>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Cancellation</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect With Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <p>Get updates on offers and trends</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="payment-icons">
+        <img src="images/visa-5.svg" alt="Visa">
+        <img src="images/mastercard-6.svg" alt="Mastercard">
+        <img src="images/united-press-international-upi-logo.svg" alt="UPI">
+        <img src="images/paytm-1.svg" alt="Paytm">
+      </div>
+
+      <div class="dropdowns">
+        <select>
+          <option>🌍 India</option>
+          <option>🇺🇸 USA</option>
+          <option>🇬🇧 UK</option>
+        </select>
+        <select>
+          <option>🌐 English</option>
+          <option>हिन्दी</option>
+          <option>தமிழ்</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: App section -->
+  <div class="footer-app">
+    <p>Download Our App</p>
+    <a href="#"><img src="images/google-play-5.svg" alt="Google Play"></a>
+    <a href="#"><img src="images/apple-app-store.svg" alt="App Store"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopEase™. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+<script src="js/single-blog.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase Blog</title>
+  <!-- icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/specialoffers.css">
+  <link rel="stylesheet" href="css/subscription.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/upcomming.css">
+  <!-- icons  -->
+
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!-- <li id="auth-link"><a href="login.html">Login</a></li> -->
+    </ul>
+    <div class="icons">
+      <div class="cart-icon" onclick="window.location.href='cart.html'">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+      <i class="fas fa-bars" id="menu-icon"></i>
+    </div>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search for products, brands and more...">
+  </div>
+</header>
+
+<section class="blog-hero">
+  <h1>Our Blog</h1>
+  <p>Get the latest shopping tips, trends, and product updates from ShopEase.</p>
+</section>
+
+<section class="blog-list" id="blog-container">
+  <!-- Blog posts will be injected here via JS -->
+</section>
+
+<!-- Shopping Inspiration Section -->
+<section class="shopping-story">
+  <div class="story-container">
+    <div class="story-image">
+      <img src="images/Metropolitan Atrium Mall.png" alt="Shopping Experience">
+    </div>
+    <div class="story-content">
+      <h2>Shopping Made Easy with ShopEase</h2>
+      <p>
+        Discover a seamless shopping experience like never before. 
+        From fashion to electronics, our curated collections are designed 
+        to bring you the best deals and the latest trends, all in one place. 
+        Enjoy fast delivery, secure payments, and customer-first service.
+      </p>
+      <a href="products.html" class="story-btn">Start Shopping →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Upcoming Products Section -->
+<section class="upcoming-products">
+  <h2> Upcoming Products</h2>
+  <p class="section-subtitle">Get a sneak peek at what’s coming soon to ShopEase</p>
+  
+  <div class="upcoming-grid" id="upcoming-container">
+    <!-- Upcoming products will be injected by JS -->
+  </div>
+</section>
+
+
+<!-- Subscription Modal -->
+<div class="subscribe-modal" id="subscribe-modal">
+  <div class="subscribe-box">
+    <span class="close-btn" id="close-modal">&times;</span>
+    
+    <h2>🎉 Don’t Miss Out!</h2>
+    <p>Subscribe now to get <b>exclusive deals</b>, <b>new arrivals</b>, and <b>shopping tips</b> right to your inbox.</p>
+
+    <form id="popup-subscribe-form">
+      <input type="email" id="popup-subscribe-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <div id="popup-subscribe-message"></div>
+  </div>
+</div>
+
+
+
+<section class="offers-section">
+  <h2>Special Seasonal Offers</h2>
+  <p class="offers-subtitle">Handpicked deals for every occasion!</p>
+
+  <div id="offers-container" class="offers-grid">
+    <!-- Dynamic Offers will load here -->
+  </div>
+</section>
+
+
+
+<!-- Product Details Modal -->
+<!-- <div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <div class="modal-body">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+
+      <div class="modal-gallery" id="modal-gallery"></div>
+
+      <div class="modal-prices">
+        <span id="modal-old-price"></span>
+        <span id="modal-new-price"></span>
+      </div>
+
+      <button id="modal-shop">Shop Now</button>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- Product Details Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <div class="modal-body">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+
+      <!-- Main Image Preview -->
+      <div class="modal-preview">
+        <img id="modal-main-img" src="" alt="Product Preview">
+      </div>
+
+      <!-- Gallery Thumbnails -->
+      <div class="modal-gallery" id="modal-gallery"></div>
+
+      <div class="modal-prices">
+        <span id="modal-old-price"></span>
+        <span id="modal-new-price"></span>
+      </div>
+
+      <button id="modal-shop">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Video Promo Section -->
+<section class="promo-video">
+  <video autoplay muted loop playsinline id="promoVideo">
+    <source src="https://videos.pexels.com/video-files/1338598/1338598-hd_1920_1080_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="promo-overlay">
+    <h2>Why ShopEase?</h2>
+    <p>Experience the future of shopping – smart, fast, and reliable. 
+       Join thousands of happy customers who trust us daily. 
+       Shop smarter, live better.</p>
+    <a href="shop.html" class="promo-btn">Start Shopping</a>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <!-- Reuse your website footer -->
+     <div class="footer-container">
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+        <li><a href="#">ShopEase</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Help & Support</h4>
+      <ul>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Cancellation</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect With Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Subscribe</h4>
+      <p>Get updates on offers and trends</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="payment-icons">
+        <img src="images/visa-5.svg" alt="Visa">
+        <img src="images/mastercard-6.svg" alt="Mastercard">
+        <img src="images/united-press-international-upi-logo.svg" alt="UPI">
+        <img src="images/paytm-1.svg" alt="Paytm">
+      </div>
+
+      <div class="dropdowns">
+        <select>
+          <option>🌍 India</option>
+          <option>🇺🇸 USA</option>
+          <option>🇬🇧 UK</option>
+        </select>
+        <select>
+          <option>🌐 English</option>
+          <option>हिन्दी</option>
+          <option>தமிழ்</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: App section -->
+  <div class="footer-app">
+    <p>Download Our App</p>
+    <a href="#"><img src="images/google-play-5.svg" alt="Google Play"></a>
+    <a href="#"><img src="images/apple-app-store.svg" alt="App Store"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopEase™. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="js/specialoffers.js"></script>
+<script src="js/subscription.js"></script>
+<script src="js/blog.js"></script>
+<script src="js/upcomming.js"></script>
+
+</body>
+</html>

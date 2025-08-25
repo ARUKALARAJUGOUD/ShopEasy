@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - ShopEase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/checkout.css">
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+<div class="checkout-container">
+  <h2>Checkout</h2>
+
+  <!-- Order Summary -->
+  <div class="order-summary" id="order-summary">
+    <h3>Order Summary</h3>
+    <div id="products-list"></div>
+    <h3>Total: ₹<span id="order-total">0</span></h3>
+  </div>
+
+  <!-- Checkout Form -->
+  <form id="checkoutForm">
+    <h3>Shipping Information</h3>
+    <label>Full Name</label><input type="text" id="name" required placeholder="Enter full name">
+    <label>Email</label><input type="email" id="email" required placeholder="Enter email">
+    <label>Phone</label><input type="tel" id="phone" required placeholder="Enter phone number">
+    <label>Address</label><textarea id="address" required></textarea>
+    <label>City</label><input type="text" id="city" required>
+    <label>State</label><input type="text" id="state" required>
+    <label>Pincode</label><input type="text" id="pincode" required>
+
+    <h3>Payment Method</h3>
+    <div class="payment-methods">
+      <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+      <label><input type="radio" name="payment" value="online"> Online Payment</label>
+    </div>
+
+    <div id="onlinePayment" class="hidden">
+      <label>Card Number</label><input type="text" maxlength="16">
+      <label>Expiry</label><input type="month">
+      <label>CVV</label><input type="password" maxlength="3">
+    </div>
+
+    <button type="submit" class="btn">Place Order</button>
+
+  </form>
+</div>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
